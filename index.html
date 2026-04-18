@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- PUBLICADO VIA GITHUB PAGES - GRATUITO -->
+    <!-- URL: https://clinicadrjames.github.io -->
+    <!-- Data: 2026-04-06 -->
+    <!-- Status: ONLINE -->
+    
+    <title>Clínica Médica Dr. James | Telemedicina 24h - 30+ Especialidades</title>
+    <meta name="description" content="Clínica Médica Dr. James - Telemedicina com 30+ especialidades. Atendimento todos os dias, inclusive feriados. Consultas online 24 horas em Foz do Jordão, PR.">
+    <meta name="keywords" content="clínica médica, telemedicina, consulta online, Dr. James, Foz do Jordão, medicina do trabalho, atendimento domiciliar, 24 horas">
+    <meta name="author" content="Clínica Médica Dr. James">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL - GITHUB PAGES -->
+    <link rel="canonical" href="https://clinicadrjames.github.io/">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://clinicadrjames.github.io/">
+    <meta property="og:title" content="Clínica Médica Dr. James | Telemedicina 24h">
+    <meta property="og:description" content="30+ especialidades médicas disponíveis online. Atendimento todos os dias, inclusive feriados.">
+    <meta property="og:image" content="https://clinicadrjames.github.io/logo.png">
+    <meta property="og:site_name" content="Clínica Médica Dr. James">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://clinicadrjames.github.io/">
+    <meta property="twitter:title" content="Clínica Médica Dr. James | Telemedicina 24h">
+    <meta property="twitter:description" content="30+ especialidades médicas disponíveis online. Atendimento todos os dias, inclusive feriados.">
+    <meta property="twitter:image" content="https://clinicadrjames.github.io/logo.png">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy': '#1a2744',
+                        'navy-light': '#243454',
+                        'gold': '#d4af37',
+                        'gold-light': '#e5c158',
+                    },
+                    fontFamily: {
+                        'serif': ['Cinzel', 'serif'],
+                        'sans': ['Montserrat', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+                        slideUp: { '0%': { transform: 'translateY(30px)', opacity: '0' }, '100%': { transform: 'translateY(0)', opacity: '1' } },
+                        float: { '0%, 100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-20px)' } }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .gradient-navy { background: linear-gradient(135deg, #1a2744 0%, #243454 100%); }
+        .hero-pattern { background-image: radial-gradient(circle at 1px 1px, rgba(212,175,55,0.15) 1px, transparent 0); background-size: 40px 40px; }
+        .logo-glow { filter: drop-shadow(0 0 30px rgba(212,175,55,0.4)); }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #d4af37; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+        .scroll-reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .scroll-reveal.active { opacity: 1; transform: translateY(0); }
+        .specialty-card { transition: all 0.3s ease; }
+        .specialty-card:hover { transform: translateX(10px); border-left-color: #d4af37; }
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+        html { scroll-behavior: smooth; }
+        
+        .logo-watermark {
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 antialiased">
+
+    <!-- PUBLICADO E ONLINE -->
+    <!-- URL: https://clinicadrjames.github.io -->
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="flex justify-between items-center">
+                <a href="https://clinicadrjames.github.io" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center border border-gold/30 overflow-hidden group-hover:border-gold transition-colors p-1">
+                        <img src="logo.png" alt="Logo Clínica Médica Dr. James" class="w-full h-full object-contain">
+                    </div>
+                    <span class="font-serif text-xl font-bold text-white tracking-wider">DR. JAMES</span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="nav-link text-white font-medium hover:text-gold transition-colors">Início</a>
+                    <a href="#telemedicina" class="nav-link text-white font-medium hover:text-gold transition-colors">Telemedicina</a>
+                    <a href="#servicos" class="nav-link text-white font-medium hover:text-gold transition-colors">Serviços</a>
+                    <a href="#sobre" class="nav-link text-white font-medium hover:text-gold transition-colors">Sobre</a>
+                    <a href="#contato" class="nav-link text-white font-medium hover:text-gold transition-colors">Contato</a>
+                    <a href="https://wa.me/5542994282826" target="_blank" rel="noopener noreferrer" class="bg-gold hover:bg-gold-light text-navy font-bold py-2 px-6 rounded-full transition-all transform hover:scale-105 flex items-center gap-2 shadow-lg">
+                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                        <span>Agendar</span>
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-white p-2" aria-label="Menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy absolute w-full top-full left-0 py-4 px-6 shadow-2xl border-t border-white/10">
+            <div class="flex flex-col space-y-4">
+                <a href="#inicio" class="text-white font-medium hover:text-gold py-2">Início</a>
+                <a href="#telemedicina" class="text-white font-medium hover:text-gold py-2">Telemedicina</a>
+                <a href="#servicos" class="text-white font-medium hover:text-gold py-2">Serviços</a>
+                <a href="#sobre" class="text-white font-medium hover:text-gold py-2">Sobre</a>
+                <a href="#contato" class="text-white font-medium hover:text-gold py-2">Contato</a>
+                <a href="https://wa.me/5542994282826" target="_blank" rel="noopener noreferrer" class="bg-gold text-navy font-bold py-3 px-4 rounded-full text-center mt-2">Agendar Consulta</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center gradient-navy hero-pattern overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-navy/90"></div>
+        <div class="absolute top-20 left-10 w-64 h-64 border border-gold/20 rounded-full animate-pulse-slow"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 border border-gold/10 rounded-full"></div>
+        
+        <div class="container mx-auto px-4 sm:px-6 relative z-10 pt-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left animate-slide-up">
+                    <div class="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-red-600 text-white rounded-full text-sm font-bold shadow-lg animate-pulse">
+                        <i data-lucide="clock" class="w-4 h-4"></i>
+                        ATENDIMENTO TODOS OS DIAS - INCLUSIVE FERIADOS
+                    </div>
+                    
+                    <div class="inline-block mb-4 px-4 py-1 border border-gold/50 rounded-full bg-white/5 backdrop-blur-sm">
+                        <span class="text-gold text-sm font-semibold tracking-widest uppercase">Excelência Médica</span>
+                    </div>
+                    <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                        Clínica Médica<br>
+                        <span class="text-gold">Dr. James</span>
+                    </h1>
+                    <p class="text-gray-300 text-lg md:text-xl mb-8 max-w-lg leading-relaxed mx-auto md:mx-0">
+                        Mais de <span class="text-gold font-bold">30 especialidades</span> em telemedicina. Atendimento todos os dias do ano, inclusive feriados. Sua saúde 24 horas por dia.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="https://wa.me/5542994282826" target="_blank" rel="noopener noreferrer" class="bg-gold hover:bg-gold-light text-navy font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105 flex items-center justify-center gap-2 text-lg shadow-lg shadow-gold/30">
+                            <i data-lucide="video" class="w-5 h-5"></i>
+                            Agendar Teleconsulta
+                        </a>
+                        <a href="#telemedicina" class="border-2 border-white/30 hover:border-gold text-white font-semibold py-4 px-8 rounded-full transition-all hover:bg-white/10 flex items-center justify-center gap-2">
+                            <i data-lucide="stethoscope" class="w-5 h-5"></i>
+                            Ver Especialidades
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex justify-center items-center animate-float">
+                    <div class="relative p-8">
+                        <div class="absolute inset-0 bg-gold/20 rounded-full blur-3xl animate-pulse"></div>
+                        <div class="relative w-[400px] h-[400px] bg-gradient-to-br from-navy to-gold rounded-full flex items-center justify-center shadow-2xl p-10">
+                            <img src="logo.png" alt="Logo Clínica Médica Dr. James" class="w-full h-full object-contain logo-glow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i data-lucide="chevron-down" class="w-8 h-8 text-gold"></i>
+        </div>
+    </section>
+
+    <!-- Telemedicina Section -->
+    <section id="telemedicina" class="py-20 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 scroll-reveal">
+                <div class="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-navy text-gold rounded-full text-sm font-bold border border-gold">
+                    <i data-lucide="video" class="w-4 h-4"></i>
+                    TELEMEDICINA 24 HORAS
+                </div>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-navy mt-2 mb-4">Especialidades Disponíveis</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-4"></div>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Atendimento online com mais de <span class="text-navy font-bold">30 especialidades médicas</span>. 
+                    Consulte-se no conforto da sua casa, quando precisar.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 scroll-reveal">
+                <!-- Adult Column 1 -->
+                <div class="bg-gray-50 rounded-2xl p-6 border-l-4 border-navy">
+                    <h3 class="font-serif text-lg font-bold text-navy mb-4 flex items-center gap-2">
+                        <i data-lucide="user" class="w-5 h-5 text-gold"></i>
+                        Especialidades Adulto
+                    </h3>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Angiologia</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Alergologia</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Cardiologia</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Dermatologia</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Endocrinologia</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Geriatria</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Ginecologia</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Hematologia</span></li>
+                    </ul>
+                </div>
+
+                <!-- Adult Column 2 -->
+                <div class="bg-gray-50 rounded-2xl p-6 border-l-4 border-navy">
+                    <h3 class="font-serif text-lg font-bold text-navy mb-4 flex items-center gap-2">
+                        <i data-lucide="activity" class="w-5 h-5 text-gold"></i>
+                        Especialidades Adulto
+                    </h3>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Infectologia</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Nefrologia</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Neurologia</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Nutricionista</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Ortopedia</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Psicologia</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Psiquiatria</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Reumatologia</span></li>
+                    </ul>
+                </div>
+
+                <!-- Adult Column 3 -->
+                <div class="bg-gray-50 rounded-2xl p-6 border-l-4 border-navy">
+                    <h3 class="font-serif text-lg font-bold text-navy mb-4 flex items-center gap-2">
+                        <i data-lucide="heart-pulse" class="w-5 h-5 text-gold"></i>
+                        Especialidades Adulto
+                    </h3>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Gastroenterologia</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Urologia</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Fisiatria</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Pneumologia</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Médico da Família</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span class="font-semibold text-navy">Medicina do Trabalho</span></li>
+                    </ul>
+                </div>
+
+                <!-- Pediatric Column -->
+                <div class="bg-navy rounded-2xl p-6 border-l-4 border-gold text-white">
+                    <h3 class="font-serif text-lg font-bold text-gold mb-4 flex items-center gap-2">
+                        <i data-lucide="baby" class="w-5 h-5"></i>
+                        Especialidades Pediátricas
+                    </h3>
+                    <ul class="space-y-2 text-gray-300 text-sm">
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white/10"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Alergologia Infantil</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white/10"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Endocrinologia Infantil</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white/10"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Neurologia Infantil</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white/10"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Ortopedia Infantil</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white/10"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Psicologia Infantil</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white/10"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Psiquiatria Infantil</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white/10"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Reumatologia Infantil</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white/10"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Gastroenterologia Infantil</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white/10"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span>Pneumologia Infantil</span></li>
+                        <li class="specialty-card flex items-center gap-2 p-2 rounded border-l-2 border-transparent hover:bg-white/10"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i><span class="text-gold font-semibold">Pediatria</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center scroll-reveal">
+                <a href="https://wa.me/5542994282826?text=Olá! Gostaria de agendar uma teleconsulta." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-navy hover:bg-navy-light text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 text-lg shadow-xl">
+                    <i data-lucide="video" class="w-6 h-6 text-gold"></i>
+                    Agendar Teleconsulta Agora
+                </a>
+                <p class="text-gray-500 mt-4 text-sm">Atendimento online seguro e rápido. Todos os dias, 24 horas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 scroll-reveal">
+                <span class="text-gold-dark font-semibold tracking-widest uppercase text-sm">O que oferecemos</span>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-navy mt-2 mb-4">Nossos Serviços</h2>
+                <div class="w-24 h-1 bg-gold mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group bg-white rounded-2xl p-6 hover-lift scroll-reveal border border-gray-100 shadow-sm">
+                    <div class="w-14 h-14 bg-navy rounded-2xl flex items-center justify-center mb-4 group-hover:bg-gold transition-colors duration-300">
+                        <i data-lucide="user-check" class="w-7 h-7 text-gold group-hover:text-navy transition-colors"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-navy mb-2">Consulta Presencial</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Atendimento médico completo e personalizado em nossa clínica.</p>
+                </div>
+
+                <div class="group bg-navy rounded-2xl p-6 hover-lift scroll-reveal border-2 border-gold shadow-lg relative overflow-hidden" style="transition-delay: 100ms;">
+                    <div class="absolute top-0 right-0 bg-gold text-navy text-xs font-bold px-3 py-1 rounded-bl-lg">30+ ESPECIALIDADES</div>
+                    <div class="w-14 h-14 bg-gold rounded-2xl flex items-center justify-center mb-4 group-hover:bg-white transition-colors duration-300">
+                        <i data-lucide="video" class="w-7 h-7 text-navy"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-gold mb-2">Teleconsulta</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-3">Mais de 30 especialidades médicas disponíveis online 24h.</p>
+                    <a href="#telemedicina" class="inline-flex items-center gap-1 text-gold hover:text-white text-sm font-semibold transition-colors">
+                        Ver especialidades <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="group bg-white rounded-2xl p-6 hover-lift scroll-reveal border border-gray-100 shadow-sm" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 bg-navy rounded-2xl flex items-center justify-center mb-4 group-hover:bg-gold transition-colors duration-300">
+                        <i data-lucide="home" class="w-7 h-7 text-gold group-hover:text-navy transition-colors"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-navy mb-2">Atendimento Domiciliar</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Cuidado médico no conforto da sua casa.</p>
+                </div>
+
+                <div class="group bg-white rounded-2xl p-6 hover-lift scroll-reveal border border-gray-100 shadow-sm" style="transition-delay: 300ms;">
+                    <div class="w-14 h-14 bg-navy rounded-2xl flex items-center justify-center mb-4 group-hover:bg-gold transition-colors duration-300">
+                        <i data-lucide="briefcase" class="w-7 h-7 text-gold group-hover:text-navy transition-colors"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-navy mb-2">Medicina do Trabalho</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Exames admissionais, demissionais e periódicos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Check-up CTA Section -->
+    <section class="py-20 bg-navy relative overflow-hidden">
+        <div class="absolute inset-0 hero-pattern opacity-30"></div>
+        <div class="absolute -right-20 -top-20 w-96 h-96 bg-gold/10 rounded-full blur-3xl"></div>
+        <div class="absolute -left-20 -bottom-20 w-96 h-96 bg-gold/10 rounded-full blur-3xl"></div>
+        
+        <div class="container mx-auto px-4 sm:px-6 relative z-10">
+            <div class="max-w-3xl mx-auto text-center scroll-reveal">
+                <div class="w-24 h-24 mx-auto mb-6 relative">
+                    <div class="absolute inset-0 bg-gold/30 rounded-full blur-xl"></div>
+                    <div class="relative w-full h-full rounded-full bg-gradient-to-br from-navy to-gold flex items-center justify-center p-3">
+                        <img src="logo.png" alt="Logo Clínica Médica Dr. James" class="w-full h-full object-contain">
+                    </div>
+                </div>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">Faça seu Check-up Anual</h2>
+                <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                    Prevenção é o melhor remédio. Agende seu check-up completo. 
+                    Disponível todos os dias, inclusive feriados, presencial ou online.
+                </p>
+                <a href="https://wa.me/5542994282826?text=Olá! Gostaria de agendar um check-up anual." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-gold hover:bg-gold-light text-navy font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105 text-lg shadow-xl">
+                    <i data-lucide="calendar-check" class="w-6 h-6"></i>
+                    Agendar Check-up
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 scroll-reveal">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-gold/20 rounded-full blur-2xl"></div>
+                        <div class="relative bg-navy rounded-3xl p-6 md:p-8 text-white overflow-hidden">
+                            <img src="logo.png" alt="" aria-hidden="true" class="absolute -right-10 -bottom-10 w-48 h-48 opacity-10 object-contain">
+                            
+                            <div class="flex items-center gap-4 mb-6 relative z-10">
+                                <div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center border-2 border-gold/50 p-2 backdrop-blur-sm">
+                                    <img src="logo.png" alt="Logo Clínica Médica Dr. James" class="w-full h-full object-contain">
+                                </div>
+                                <div>
+                                    <h3 class="font-serif text-xl md:text-2xl font-bold">Dr. Michel James</h3>
+                                    <p class="text-gold">CRM-PR 41506</p>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-3 relative z-10 text-sm md:text-base">
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="award" class="w-5 h-5 text-gold flex-shrink-0"></i>
+                                    <span>Ex-docente da Faculdade de Medicina</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="graduation-cap" class="w-5 h-5 text-gold flex-shrink-0"></i>
+                                    <span>Universidade Estadual de Londrina</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-6 pt-6 border-t border-white/20 relative z-10">
+                                <h4 class="font-bold text-gold mb-3 text-sm uppercase tracking-wider">Pós-Graduações</h4>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i>Medicina do Trabalho</li>
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i>Medicina Intensiva</li>
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i>Infectologia</li>
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i>Cirurgia Geral</li>
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-gold flex-shrink-0"></i>Saúde da Família</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-1 md:order-2 scroll-reveal">
+                    <span class="text-gold-dark font-semibold tracking-widest uppercase text-sm">Quem somos</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-navy mt-2 mb-6">Excelência e Dedicação</h2>
+                    <div class="w-24 h-1 bg-gold mb-6"></div>
+                    
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        A Clínica Médica Dr. James nasceu do compromisso com a saúde integral dos pacientes. Com anos de experiência e múltiplas especializações, oferecemos atendimento humanizado baseado em evidências científicas.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Nossa missão é proporcionar cuidado médico de qualidade, seja no consultório, na casa do paciente ou através da telemedicina com mais de 30 especialidades.
+                    </p>
+
+                    <div class="bg-navy rounded-2xl p-5 text-white mb-6 border-l-4 border-gold">
+                        <div class="flex items-center gap-3 mb-2">
+                            <i data-lucide="calendar-check" class="w-5 h-5 text-gold"></i>
+                            <h3 class="font-bold">Disponibilidade Total</h3>
+                        </div>
+                        <p class="text-gray-300 text-sm">
+                            Atendimento <span class="text-gold font-bold">todos os dias</span>, inclusive <span class="text-gold font-bold">feriados</span>. 
+                            Telemedicina com <span class="text-gold font-bold">30+ especialidades</span> disponível 24 horas.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                            <div class="text-2xl md:text-3xl font-bold text-navy mb-1">10+</div>
+                            <div class="text-xs text-gray-500">Anos de Experiência</div>
+                        </div>
+                        <div class="border-x border-gray-200">
+                            <div class="text-2xl md:text-3xl font-bold text-navy mb-1">30+</div>
+                            <div class="text-xs text-gray-500">Especialidades</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl md:text-3xl font-bold text-navy mb-1">365</div>
+                            <div class="text-xs text-gray-500">Dias no Ano</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 md:py-24 bg-navy relative overflow-hidden">
+        <div class="absolute inset-0 hero-pattern opacity-20"></div>
+        <div class="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+            <img src="logo.png" alt="" aria-hidden="true" class="w-[300px] h-[300px] logo-watermark">
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 relative z-10">
+            <div class="text-center mb-12 scroll-reveal">
+                <div class="w-24 h-24 mx-auto mb-4 relative">
+                    <div class="absolute inset-0 bg-gold/30 rounded-full blur-xl"></div>
+                    <div class="relative w-full h-full rounded-full bg-gradient-to-br from-navy to-gold flex items-center justify-center p-3">
+                        <img src="logo.png" alt="Logo Clínica Médica Dr. James" class="w-full h-full object-contain">
+                    </div>
+                </div>
+                <span class="text-gold font-semibold tracking-widest uppercase text-sm">Entre em contato</span>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-2 mb-4">Agende sua Consulta</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-red-600 text-white rounded-full text-sm font-bold shadow-lg">
+                    <i data-lucide="clock" class="w-4 h-4"></i>
+                    ATENDIMENTO: TODOS OS DIAS, INCLUSIVE FERIADOS
+                </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+                <a href="https://wa.me/5542994282826" target="_blank" rel="noopener noreferrer" class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all hover-lift scroll-reveal">
+                    <div class="w-14 h-14 bg-gold rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                        <i data-lucide="phone" class="w-7 h-7 text-navy"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-white mb-1">Telefone</h3>
+                    <p class="text-gold text-lg font-semibold">(42) 99428-2826</p>
+                    <p class="text-gray-400 text-xs mt-1">WhatsApp</p>
+                </a>
+
+                <a href="mailto:clinicadrjames@gmail.com" class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all hover-lift scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 bg-gold rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                        <i data-lucide="mail" class="w-7 h-7 text-navy"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-white mb-1">E-mail</h3>
+                    <p class="text-gold text-sm font-semibold break-all">clinicadrjames@gmail.com</p>
+                    <p class="text-gray-400 text-xs mt-1">Envie uma mensagem</p>
+                </a>
+
+                <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all hover-lift scroll-reveal" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 bg-gold rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                        <i data-lucide="map-pin" class="w-7 h-7 text-navy"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-white mb-1">Endereço</h3>
+                    <p class="text-gray-300 text-sm">Rua General Osório, 255</p>
+                    <p class="text-gold font-semibold text-sm">Foz do Jordão - PR</p>
+                </div>
+
+                <div class="group bg-red-600/20 backdrop-blur-sm border-2 border-red-500/50 rounded-2xl p-6 text-center hover:bg-red-600/30 transition-all hover-lift scroll-reveal" style="transition-delay: 300ms;">
+                    <div class="w-14 h-14 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform animate-pulse">
+                        <i data-lucide="clock" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-white mb-1">Atendimento</h3>
+                    <p class="text-red-300 font-bold">TODOS OS DIAS</p>
+                    <p class="text-gold font-semibold text-sm">Inclusive Feriados</p>
+                    <p class="text-gray-400 text-xs mt-1">30+ Especialidades</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-light py-10 border-t border-white/10">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center p-1.5 border border-gold/30 backdrop-blur-sm overflow-hidden">
+                        <img src="logo.png" alt="Logo Clínica Médica Dr. James" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <h4 class="font-serif text-lg font-bold text-white">CLÍNICA MÉDICA DR. JAMES</h4>
+                        <p class="text-gray-400 text-xs">CRM-PR 41506</p>
+                    </div>
+                </div>
+                
+                <div class="text-center md:text-right text-gray-400 text-sm">
+                    <div class="inline-flex items-center gap-2 mb-2 px-3 py-1 bg-red-600/30 border border-red-500/50 rounded-full text-red-200 text-xs font-bold">
+                        <i data-lucide="clock" class="w-3 h-3"></i>
+                        ATENDIMENTO 24H - TODOS OS DIAS
+                    </div>
+                    <p class="flex items-center justify-center md:justify-end gap-2 mb-1">
+                        <i data-lucide="mail" class="w-4 h-4 text-gold"></i>
+                        <a href="mailto:clinicadrjames@gmail.com" class="hover:text-gold transition-colors">clinicadrjames@gmail.com</a>
+                    </p>
+                    <p class="flex items-center justify-center md:justify-end gap-2">
+                        <i data-lucide="phone" class="w-4 h-4 text-gold"></i>
+                        <span>(42) 99428-2826</span>
+                    </p>
+                    <p class="mt-2 text-gray-500 text-xs">&copy; 2026 Clínica Médica Dr. James. Todos os direitos reservados.</p>
+                    <p class="text-gray-600 text-xs mt-1">Publicado via GitHub Pages - Gratuito</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/5542994282826" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-2xl transition-all transform hover:scale-110 animate-bounce" aria-label="WhatsApp">
+            <i data-lucide="message-circle" class="w-7 h-7"></i>
+        </a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+        });
+
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.remove('bg-transparent', 'py-4');
+                navbar.classList.add('bg-navy/95', 'backdrop-blur-md', 'py-2', 'shadow-lg');
+            } else {
+                navbar.classList.add('bg-transparent', 'py-4');
+                navbar.classList.remove('bg-navy/95', 'backdrop-blur-md', 'py-2', 'shadow-lg');
+            }
+        });
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
