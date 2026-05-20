@@ -219,7 +219,7 @@ async function handleSchedulingFlow(message, phone, text) {
         return true;
       }
       session.specialty = SPECIALTIES[option - 1];
-      session.step = 'consultation_type'; 
+      session.step = 'consultation_type'; // 🌟 PRÓXIMO PASSO: Tipo de atendimento
       await message.reply(
         `Especialidade: *${session.specialty}*\n\n` +
         `📍 Como deseja realizar o atendimento?\n\n` +
@@ -230,7 +230,7 @@ async function handleSchedulingFlow(message, phone, text) {
       );
       break;
     }
-    case 'consultation_type': { 
+    case 'consultation_type': { // 🌟 PROCESSA TIPO DE CONSULTA INICIALMENTE
       const norm = text.trim();
       if (norm === '1') session.consultationType = 'Presencial';
       else if (norm === '2') session.consultationType = 'Domiciliar';
@@ -261,6 +261,7 @@ async function handleSchedulingFlow(message, phone, text) {
       }
       session.cpf = cpfRaw;
       
+      // Se for Telemedicina, o endereço de atendimento físico não é estritamente obrigatório, mas vamos perguntar
       if (session.consultationType === 'Telemedicina') {
         await message.reply('🏠 Para fins de cadastro, informe seu *endereço completo* (ou digite "Não aplicável"):');
       } else {
@@ -309,7 +310,7 @@ async function handleSchedulingFlow(message, phone, text) {
         cpf: session.cpf,
         address: session.address,
         specialty: session.specialty,
-        consultationType: session.consultationType, 
+        consultationType: session.consultationType, // Já salvo na estrutura
         date: session.date,
         time: text,
         status: 'Agendada',
@@ -470,6 +471,7 @@ async function sendReminder2h(client, appointment) {
   try {
     if (!(await client.isRegisteredUser(chatId))) return;
     
+    // Como a modalidade já foi coletada, este lembrete de 2h serve como aviso final
     let extraText = appointment.consultationType === 'Telemedicina' 
       ? 'O link para sua chamada de vídeo será enviado minutos antes.'
       : `Lembre-se do local cadastrado: ${appointment.address || 'Clínica Principal'}`;
@@ -617,26 +619,10 @@ async function handleMessage(client, msg) {
 
 async function main() {
   await initDatabase();
-  
   const client = new Client({
     authStrategy: new LocalAuth(),
-    puppeteer: {
-      // Força o uso do executável padrão do Google Chrome no Windows
-      executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
-      headless: true,
-      args: [
-        '--no-sandbox',
-        '--disable-setuid-sandbox',
-        '--disable-dev-shm-usage',
-        '--disable-accelerated-2d-canvas',
-        '--no-first-run',
-        '--no-zygote',
-        '--single-process',
-        '--disable-gpu'
-      ]
-    },
+    puppeteer: { headless: true, args: ['--no-sandbox'] },
   });
-
   client.on('qr', (qr) => qrcode.generate(qr, { small: true }));
   client.on('ready', () => {
     console.log('✅ Bot conectado.');
