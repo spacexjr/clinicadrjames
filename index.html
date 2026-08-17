@@ -122,6 +122,7 @@
                     <a href="#inicio" class="nav-link text-white font-medium hover:text-gold transition-colors">Início</a>
                     <a href="#telemedicina" class="nav-link text-white font-medium hover:text-gold transition-colors">Telemedicina</a>
                     <a href="#servicos" class="nav-link text-white font-medium hover:text-gold transition-colors">Serviços</a>
+                    <a href="#galeria" class="nav-link text-white font-medium hover:text-gold transition-colors">Galeria</a>
                     <a href="#sobre" class="nav-link text-white font-medium hover:text-gold transition-colors">Sobre</a>
                     <a href="#contato" class="nav-link text-white font-medium hover:text-gold transition-colors">Contato</a>
                     <a href="https://wa.me/5542999262497?text=agendar" target="_blank" rel="noopener noreferrer" class="bg-gold hover:bg-gold-light text-navy font-bold py-2 px-6 rounded-full transition-all transform hover:scale-105 flex items-center gap-2 shadow-lg">
@@ -142,6 +143,7 @@
                 <a href="#inicio" class="text-white font-medium hover:text-gold py-2">Início</a>
                 <a href="#telemedicina" class="text-white font-medium hover:text-gold py-2">Telemedicina</a>
                 <a href="#servicos" class="text-white font-medium hover:text-gold py-2">Serviços</a>
+                <a href="#galeria" class="text-white font-medium hover:text-gold py-2">Galeria</a>
                 <a href="#sobre" class="text-white font-medium hover:text-gold py-2">Sobre</a>
                 <a href="#contato" class="text-white font-medium hover:text-gold py-2">Contato</a>
                 <a href="https://wa.me/5542999262497?text=agendar" target="_blank" rel="noopener noreferrer" class="bg-gold text-navy font-bold py-3 px-4 rounded-full text-center mt-2">Agendar Consulta</a>
@@ -377,6 +379,51 @@
                     <i data-lucide="calendar-check" class="w-6 h-6"></i>
                     Agendar Check-up
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Fotos e Vídeo -->
+    <section id="galeria" class="py-20 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 scroll-reveal">
+                <span class="text-gold-dark font-semibold tracking-widest uppercase text-sm">Conheça nossa estrutura</span>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-navy mt-2 mb-4">Nossa Clínica</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-4"></div>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Ambiente moderno, confortável e preparado para oferecer o melhor atendimento.
+                </p>
+            </div>
+
+            <!-- Fotos -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+                <div class="overflow-hidden rounded-2xl shadow-md hover-lift scroll-reveal group">
+                    <img src="foto1.jpg" alt="Recepção da Clínica Médica Dr. James" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-md hover-lift scroll-reveal group" style="transition-delay: 100ms;">
+                    <img src="foto2.jpg" alt="Consultório da Clínica Médica Dr. James" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-md hover-lift scroll-reveal group" style="transition-delay: 200ms;">
+                    <img src="foto3.jpg" alt="Fachada da Clínica Médica Dr. James" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+            </div>
+
+            <!-- Vídeo do YouTube -->
+            <div class="max-w-3xl mx-auto scroll-reveal">
+                <div class="text-center mb-6">
+                    <h3 class="font-serif text-2xl font-bold text-navy mb-2">Conheça a Clínica em Vídeo</h3>
+                    <div class="w-16 h-1 bg-gold mx-auto"></div>
+                </div>
+                <div class="relative w-full rounded-2xl overflow-hidden shadow-xl" style="padding-top: 56.25%;">
+                    <iframe 
+                        class="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/23zKoPYwHRU" 
+                        title="Vídeo Clínica Médica Dr. James" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
         </div>
     </section>
