@@ -382,52 +382,62 @@
             </div>
         </div>
     </section>
+<!-- Galeria de Fotos e Vídeos -->
+<section id="galeria" class="py-20 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 scroll-reveal">
+            <span class="text-gold-dark font-semibold tracking-widest uppercase text-sm">Conheça nossa estrutura</span>
+            <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-navy mt-2 mb-4">Nossa Clínica</h2>
+            <div class="w-24 h-1 bg-gold mx-auto mb-4"></div>
+            <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                Ambiente moderno, confortável e preparado para oferecer o melhor atendimento.
+            </p>
+        </div>
 
-    <!-- Galeria de Fotos e Vídeo -->
-    <section id="galeria" class="py-20 md:py-24 bg-white">
-        <div class="container mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 scroll-reveal">
-                <span class="text-gold-dark font-semibold tracking-widest uppercase text-sm">Conheça nossa estrutura</span>
-                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-navy mt-2 mb-4">Nossa Clínica</h2>
-                <div class="w-24 h-1 bg-gold mx-auto mb-4"></div>
-                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
-                    Ambiente moderno, confortável e preparado para oferecer o melhor atendimento.
-                </p>
+        <!-- Fotos -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+            <div class="overflow-hidden rounded-2xl shadow-md hover-lift scroll-reveal group">
+                <img src="foto1.jpg" alt="Recepção da Clínica Médica Dr. James" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
             </div>
-
-            <!-- Fotos -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
-                <div class="overflow-hidden rounded-2xl shadow-md hover-lift scroll-reveal group">
-                    <img src="foto1.jpg" alt="Recepção da Clínica Médica Dr. James" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
-                </div>
-                <div class="overflow-hidden rounded-2xl shadow-md hover-lift scroll-reveal group" style="transition-delay: 100ms;">
-                    <img src="foto2.jpg" alt="Consultório da Clínica Médica Dr. James" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
-                </div>
-                <div class="overflow-hidden rounded-2xl shadow-md hover-lift scroll-reveal group" style="transition-delay: 200ms;">
-                    <img src="foto3.jpg" alt="Fachada da Clínica Médica Dr. James" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
-                </div>
+            <div class="overflow-hidden rounded-2xl shadow-md hover-lift scroll-reveal group" style="transition-delay: 100ms;">
+                <img src="foto2.jpg" alt="Consultório da Clínica Médica Dr. James" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
             </div>
-
-            <!-- Vídeo do YouTube -->
-            <div class="max-w-3xl mx-auto scroll-reveal">
-                <div class="text-center mb-6">
-                    <h3 class="font-serif text-2xl font-bold text-navy mb-2">Conheça a BRMED</h3>
-                    <div class="w-16 h-1 bg-gold mx-auto"></div>
-                </div>
-                <div class="relative w-full rounded-2xl overflow-hidden shadow-xl" style="padding-top: 56.25%;">
-                    <iframe 
-                        class="absolute top-0 left-0 w-full h-full"
-                        src="https://www.youtube.com/embed/23zKoPYwHRU" 
-                        title="Vídeo Clínica Médica Dr. James" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
+            <div class="overflow-hidden rounded-2xl shadow-md hover-lift scroll-reveal group" style="transition-delay: 200ms;">
+                <img src="foto3.jpg" alt="Fachada da Clínica Médica Dr. James" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
             </div>
         </div>
-    </section>
 
+        <!-- Vídeos do YouTube -->
+        <div class="text-center mb-6 scroll-reveal">
+            <h3 class="font-serif text-2xl font-bold text-navy mb-2">Conheça a BRMED</h3>
+            <div class="w-16 h-1 bg-gold mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div class="relative w-full rounded-2xl overflow-hidden shadow-xl scroll-reveal" style="padding-top: 56.25%;">
+                <iframe 
+                    class="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/23zKoPYwHRU" 
+                    title="Vídeo Clínica Médica Dr. James 1" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="relative w-full rounded-2xl overflow-hidden shadow-xl scroll-reveal" style="padding-top: 56.25%; transition-delay: 100ms;">
+                <iframe 
+                    class="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/McSj8RIvAtY" 
+                    title="Vídeo Clínica Médica Dr. James 2" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
     <!-- About Section -->
     <section id="sobre" class="py-20 md:py-24 bg-white">
         <div class="container mx-auto px-4 sm:px-6">
